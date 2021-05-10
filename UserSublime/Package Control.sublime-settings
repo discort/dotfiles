@@ -1,0 +1,20 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Copy Relative Path",
+		"Dockerfile Syntax Highlighting",
+		"MarkdownPreview",
+		"Material Theme",
+		"Package Control",
+		"Protocol Buffer Syntax",
+		"Python 3",
+		"SideBarEnhancements",
+		"Theme - Dark Material",
+		"TypeScript Syntax"
+	]
+}

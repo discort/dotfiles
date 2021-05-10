@@ -1,0 +1,52 @@
+[
+    // Reveal the currently open file in the sidebar
+    { "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar" },
+
+    // AdvancedNewFile
+    { "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new" },
+
+    // Create a new snippet [Jeffrey Way]
+    { "keys": ["alt+super+n"], "command": "new_snippet" },
+
+    // Open iTerm
+    { "keys": ["ctrl+alt+t"], "command": "open_terminal" },
+
+    // Select (or type) the syntax to apply to the current view.
+    { "keys": ["ctrl+shift+y"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Set Syntax: "} },
+
+    { "keys": ["super+i"], "command": "copy_path" },
+    { "keys": ["super+shift+i"], "command": "copy_relative_path" },
+
+    // layout snippets
+    {
+        "keys": ["super+alt+left"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.33, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+    {
+        "keys": ["super+alt+right"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.66, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+
+
+    // Wrap selection in tag
+    {
+        "keys"      :   ["alt+shift+t"],
+        "command"   :   "insert_snippet",
+        "args": {
+            "contents": "<${1:p}>${0:$SELECTION}</${1}>"
+        }
+    },
+
+]
