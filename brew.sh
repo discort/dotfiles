@@ -32,6 +32,7 @@ brew install git
 brew install git-lfs
 brew install tree
 brew install openssl
+brew install htop
 
 # Remove outdated versions from the cellar.
 brew cleanup
@@ -40,17 +41,24 @@ brew cleanup
 brew install vim
 brew install grep
 brew install base64
+brew install zsh
 
 # Basic Functionality
-brew cask install rectangle
-brew cask install flux
-brew cask install lunar
-brew cask install appcleaner
+brew install --cask rectangle
+brew install --cask flux
+brew install --cask lunar
+brew install --cask appcleaner
 
 # Programming
-brew cask install iterm2
-brew cask install sublime-text
-brew cask install docker
+brew install --cask iterm2
+brew install --cask sublime-text
+brew install --cask docker
 
 # Work
-brew cask install slack
+brew install --cask slack
+
+# Design
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -L -o ~/.oh-my-zsh/custom/themes/materialshell.zsh-theme https://raw.githubusercontent.com/carloscuesta/materialshell/master/materialshell.zsh
+
+
